@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Gaming Class</title>
+
+    <link rel="stylesheet" href="./src/styles/index.css">
+</head>
+<body>
+    
+    <main>
+        <h1>Desafio: <span class="highlighted-word">Criando Classes de um Jogo</span></h1>
+
+        <div class="inputs">
+            <input type="text" name="hero-name" id="hero-name" autocomplete="off" placeholder="Digite o nome do seu Herói">
+            <input type="text" name="hero-age" id="hero-age" autocomplete="off" placeholder="Digite a idade do seu Herói">
+            <select name="hero-type" id="hero-type">
+                <option value="" disabled selected hidden>Selecione o tipo do seu Herói</option>
+                <option value="Guerreiro">Guerreiro</option>
+                <option value="Mago">Mago</option>
+                <option value="Ninja">Ninja</option>
+                <option value="Monge">Monge</option>
+            </select>
+        </div>
+
+        <button id="attack-btn">atacar!</button>
+
+        <p class="result">O <span class="highlighted-word" id="hero-attacking">{...}</span> atacou usando <span class="highlighted-word" id="hero-equipment">{...}</span></p>
+    </main>
+
+    <script src="./src/js/index.js" type="module"></script>
+</body>
+</html>
